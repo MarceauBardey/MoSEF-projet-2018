@@ -8,7 +8,7 @@ read -p "Quel répertoire vous intéresse aujourd'hui (Veuillez indiquer le chem
 cd $rep
 ls
 
-cd ~
+
 
 
 
