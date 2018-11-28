@@ -9,7 +9,7 @@ cd $rep
 ls
 
 cd ~
-read -p "Veuillez indiquer le répertoire pour lequel vous souhaitez voir tous les changements éffectués depuis une semaine (indiquer l chemin complet) " repertoire
+read -p "Veuillez indiquer le répertoire pour lequel vous souhaitez voir tous les changements éffectués depuis une semaine (indiquer le chemin complet depuis ~) " repertoire
 cd $repertoire
 fichiermodif=$(find -type f -mtime -7)
 echo "$fichiermodif"
