@@ -1,17 +1,23 @@
 #!/bin/bashm
+date=$(date '+%d %B %Y')
+
+echo "Bienvenue $USER, nous sommes le $date"
+
 cd ~
-date=$(date +%d %B %Y)
-username=$(whoami)
+read -p "Quel répertoire vous intéresse aujourd'hui (Veuillez indiquer le chemin complet de répertoire depuis ~) ?" rep
+cd $rep
+ls
 
-echo "Bienvenue $username, nous sommes le $date"
+cd ~
+read -p "Veuillez indiquer le répertoire pour lequel vous souhaitez voir tous les changements éffectués depuis une semaine (indiquer l chemin complet) " repertoire
+cd $repertoire
+fichiermodif=$(find -type f -mtime -7)
+echo "$fichiermodif"
 
-read -p "Quel répertoire vous intéresse aujourd'hui ?" rep
-find -name $rep -exec ls {} \;
 
-read -p "Veuillez indiquer le répertoire pour lequel vous souhaitez voir tous les changements éffectués depuis une semaine " repertoire
-find -name $repertoire -exec find -type f -mtime -7 {} \;
 
-cd ~/gitstuff/MoSEF-projet-2018
+
+
 
 
 
