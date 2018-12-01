@@ -97,10 +97,10 @@ Git push –u cmd1 maj-projet
 
 >confirm merge
 
-
-
-9.En local fusionner la nouvelle branche master
+## 9.En local fusionner la nouvelle branche master
 Git checkout master
-Git merge maj-projet
 
-10.
+Git merge maj
+
+## 10.Vous n'avez plus besoin du fichier Consignes.md, supprimez-le en local et poussez les modifications sur Github
+
