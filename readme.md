@@ -19,7 +19,7 @@ Création du programme :
   !/bin/bash
 
   cd ~  #je me place dans la source 
-  date=$(date +%d %B %Y)  #création de la variable date sous forme « 5 December 2018 »
+  date=$(date '+%d %B %Y')  #création de la variable date sous forme « 5 December 2018 »
 
   echo « Bienvenue $USER, nous sommes le $date » #ce qui s’affiche quand l’utilisateur lance le progarmme 
 
