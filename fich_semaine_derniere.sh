@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~
-date=$(date +%d %B %Y)
+date=$(date '+%d %B %Y')
 
 echo "Bienvenue $USER, nous sommes le $date"
 
