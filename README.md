@@ -104,5 +104,6 @@ Git merge maj
 
 ## 10.Vous n'avez plus besoin du fichier Consignes.md, supprimez-le en local et poussez les modifications sur Github
 rm Consignes.md
+
 git push -u cmd master
 
