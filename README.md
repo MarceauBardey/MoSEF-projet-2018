@@ -3,13 +3,13 @@
 Précision de lecture du document: Les commentaires explicatifs sur les programmes sont précédés de "#"
 
 ## 1.Forker ce dépôt dans votre compte Github.
-Le forkage à été éffectué depuis le compte github de Amadou BALDE
+Le forkage a été éffectué depuis le compte github de Amadou BALDE
 
 ## 2.Clonage et création du fichier readme.md
 
 Git clone https://github.com/MarceauBardey/MoSEF-projet-2018.git
 
-Vim readme.md
+Vim README.md #ce fichier sera complété au fur et à mesure du projet pour être "commité" et "pushé" avant l'envoi du rendu final.
 
 ## 3.Créer le script fich_semaine_derniere.sh
 Vim fich_semaine_derniere.sh
@@ -33,19 +33,18 @@ Création du programme :
   Bash fich_semaine_ derniere.sh #Pour éffectuer le programme
 
 ## 4.Commiter le fichier dans le dépôt local puis le pousser dans le dépôt distant
-Git add fich_semaine_derniere.sh
+git add fich_semaine_derniere.sh
 
-Git commit –m « Création du Programme pour projet 2018 »
+git commit –m « Création du Programme pour projet 2018 »
 
-Git remote add cmd https://github.com/MarceauBardey/MoSEF-projet-2018.git
-
-Git push –u cmd master
+git push –u orgin master
 
 ## 5.Sur le dépôt local, créer une nouvelle branche.
  git branch maj-projet
 
 ## 6. Editer le script dans la nouvelle branche pour qu’il affiche les fichiers modifiés il y a moins d’une semaine (du repertoire saisi par l’utilisateur)
-Checkout maj-projet 
+Checkout maj-projet
+ 
 vim fich_semaine_derniere.sh
 
   cd ~  #je me place dans la source 
@@ -77,9 +76,7 @@ Git add fich_semaine_derniere.sh
 
 Git commit –m « 1ère modification du programme »
 
-Git remote add cmd1 https://github.com/MarceauBardey/MoSEF-projet-2018.git
-
-Git push –u cmd1 maj-projet
+Git push –u origin maj-projet
 
 ## 8.Faire une pull request de la nouvelle branche sur master. Fusionner la pull request
  Sur github :
@@ -105,5 +102,5 @@ Git merge maj
 ## 10.Vous n'avez plus besoin du fichier Consignes.md, supprimez-le en local et poussez les modifications sur Github
 rm Consignes.md
 
-git push -u cmd master
+git push -u origin master
 
